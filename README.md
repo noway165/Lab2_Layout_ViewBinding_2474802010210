@@ -1,4 +1,4 @@
-# Lab 2 – Flat XML Layouts & ViewBinding
+# Lab 2 - Flat XML Layouts & ViewBinding
 
 - **Student:** Tăng Thoại Lâm
 - **Student ID:** 2474802010210
