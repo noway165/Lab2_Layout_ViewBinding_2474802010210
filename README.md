@@ -1,44 +1,40 @@
-# Lab 2 - Thiết kế giao diện phẳng XML & ViewBinding
+# Lab 2 – Flat XML Layouts & ViewBinding
 
-- **Sinh viên:** Tăng Thoại Lâm
-- **MSSV:** 2474802010210
-- **Lớp:** 72ITSE30603
-- **Môn:** Lập trình ứng dụng di động
-- **Công nghệ:** Kotlin, ConstraintLayout, ViewBinding
+- **Student:** Tăng Thoại Lâm
+- **Student ID:** 2474802010210
+- **Class:** 72ITSE30603
+- **Course:** Mobile Application Programming
+- **Tech:** Kotlin, ConstraintLayout, ViewBinding
 - **Package:** `vn.edu.vlu.lab2`
 
-## Mô tả
-Ứng dụng có hai màn hình: **Đăng nhập** và **Hồ sơ người dùng**. Toàn bộ giao diện dùng ConstraintLayout phẳng và ViewBinding (không dùng `findViewById`). Chuỗi nằm trong `strings.xml`, có thêm bản tiếng Anh `values-en`.
+## Description
+The app has two screens: **Login** and **User Profile**. The whole UI uses a flat ConstraintLayout hierarchy and ViewBinding (no `findViewById`). All strings live in `strings.xml`, with an English version in `values-en`.
 
-## Cách chạy
-1. Mở project bằng Android Studio, chờ Gradle Sync.
-2. Chạy trên máy ảo (Shift + F10).
-3. Đăng nhập thử: `sv01@vlu.edu.vn` / `123456`.
+## How to run
+1. Open the project in Android Studio and wait for Gradle Sync to finish.
+2. Run it on an emulator (Shift + F10).
+3. Sign in with: `sv01@vlu.edu.vn` / `123456`.
 
-## Chức năng
-- Kiểm tra dữ liệu đăng nhập:
-  - Để trống: báo thiếu dữ liệu.
-  - Email sai định dạng: báo email không hợp lệ.
-  - Mật khẩu dưới 6 ký tự: báo mật khẩu tối thiểu 6 ký tự.
-  - Hợp lệ: hiện "Đăng nhập thành công" và chuyển sang màn Hồ sơ (xác thực giả lập, chưa gọi máy chủ).
-- Màn Hồ sơ có avatar tỉ lệ 1:1, tên, vai trò, ba dòng thông tin (Email, MSSV, Lớp) và hai nút chia đều (Chỉnh sửa, Đăng xuất).
-- Bài tập Cấp 1: dòng "Quên mật khẩu?" hiện Toast, bản tiếng Anh trong `values-en`.
-- Cả hai màn hình bọc `ScrollView` để xoay ngang vẫn kéo được.
+## Features
+- Login input validation:
+  - Empty fields: shows a "missing data" message.
+  - Invalid email format: shows an email error.
+  - Password shorter than 6 characters: shows a password error.
+  - Valid input: shows "Login successful" and opens the Profile screen (simulated authentication, no server call).
+- Profile screen with a 1:1 avatar, name, role, three info rows (Email, Student ID, Class) and two equally sized buttons (Edit, Log out).
+- Level 1 exercise: a "Forgot password?" link that shows a Toast, and an English translation in `values-en`.
+- Both screens are wrapped in a `ScrollView`, so they stay scrollable in landscape.
 
-## Ảnh minh chứng
+## Screenshots
 
-### Màn hình Đăng nhập
+### Login screen
 ![Login](docs/screenshots/login.png)
 
-### Màn hình Hồ sơ
+### Profile screen
 ![Profile](docs/screenshots/profile.png)
 
-### Xoay ngang
+### Landscape
 ![Landscape](docs/screenshots/landscape.png)
 
 ### Layout Inspector
 ![Layout Inspector](docs/screenshots/layout_inspector.png)
-
-## Ghi chú
-- Xác thực chỉ là giả lập.
-- Không commit `local.properties`, thư mục `build/`, mật khẩu hay khóa API.
