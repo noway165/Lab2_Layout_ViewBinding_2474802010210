@@ -1,4 +1,4 @@
-# Lab 2 – Thiết kế giao diện phẳng XML & ViewBinding
+# Lab 2 - Thiết kế giao diện phẳng XML & ViewBinding
 
 - **Sinh viên:** Tăng Thoại Lâm
 - **MSSV:** 2474802010210
